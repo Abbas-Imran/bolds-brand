@@ -8,7 +8,14 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "navbar-gradient":
+          "linear-gradient(90deg, #5573CC 0%, #2D313D 50%, #5573CC 100%)",
+      },
       colors: {
+        brand: {
+          100: "#262626",
+        },
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

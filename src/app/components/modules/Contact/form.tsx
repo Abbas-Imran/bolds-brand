@@ -12,7 +12,6 @@ export default function ContactForm() {
         >
           How can we help
         </h2>
-
         <form className="space-y-4">
           <input
             type="email"

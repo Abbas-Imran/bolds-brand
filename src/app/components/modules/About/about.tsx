@@ -2,9 +2,9 @@ import { monsterrat } from "@/app/styles/font";
 export default function AboutCEO() {
   return (
     <div className="container mx-auto px-20 py-0 min-h-[600px] flex relative ">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full h-full min-h-[600px] items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:w-full md:h-full md:min-h-[600px] items-stretch">
         {/* Left Side - Text Section */}
-        <div className="flex flex-col  h-full min-h-80">
+        <div className="flex flex-col  md:h-full h-70 md:min-h-80">
           <p
             className={`${monsterrat.className} text-sm uppercase text-[#545454]`}
           >
@@ -26,14 +26,16 @@ export default function AboutCEO() {
           </p>
           <a
             href="#"
-            className={`${monsterrat.className} text-[#148AE5] font-semibold mt-[350px] inline-block text-lg underline    `}
+            className={`${monsterrat.className} text-[#148AE5] font-semibold md:mt-[350px] mt-[30px] inline-block text-lg underline    `}
           >
             LEARN MORE
           </a>
         </div>
 
         {/* Right Side - Image Placeholder */}
-        <div className="w-full  h-full bg-gray-300"></div>
+        <div className="md:w-full  md:h-full h-80 mt-10   bg-gray-300">
+          <img src="/" alt="" />
+        </div>
       </div>
     </div>
   );

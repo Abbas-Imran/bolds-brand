@@ -7,13 +7,13 @@ function Hero() {
       <div className="relative z-20 flex min-h-[500px] items-center justify-center bg-black/5 backdrop-blur-sm px-8 py-16 rounded-b-3xl">
         <div className="flex w-full items-center justify-center gap-10">
           <div className="flex w-fit items-center justify-center gap-10">
-            <div className="w-28 h-28 relative">
+            <div className="md:w-28 md:h-28 w-20 h-20 relative">
               <Image alt="Interon Logo" fill src="/interon.png" />
             </div>
             <div className="space-y-8">
               <p className="text-xl text-brand-100">Brands</p>
               <div className="">
-                <h1 className="text-7xl font-bold tracking-tight text-gray-900 mb-16">
+                <h1 className="md:text-7xl text-5xl font-bold tracking-tight text-gray-900 mb-16">
                   INTERONE
                   <br />
                   LED's

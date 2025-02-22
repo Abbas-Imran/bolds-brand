@@ -9,7 +9,7 @@ const oswald = Oswald({
 function Help() {
   return (
     <div className={`${oswald.className} relative pt-20`}>
-        <div className="absolute top-2/4 left-0 w-full h-4/5 bg-white rounded-3xl" />
+      <div className="absolute top-2/4 left-0 w-full h-4/5 bg-white rounded-3xl" />
       <div className="">
         <div className="relative mx-auto max-w-5xl px-4">
           <div

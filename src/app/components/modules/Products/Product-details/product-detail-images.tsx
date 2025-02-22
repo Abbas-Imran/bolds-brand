@@ -1,7 +1,11 @@
+import { Heart } from "lucide-react";
+
 export default function ProductDetailImages() {
   return (
     <div className="flex flex-col ml-5 md:ml-0 justify-items-stretch">
-      <div className="w-[890] h-[200] py-10 bg-[#E9E9F1]">
+      <div className="relative w-[890] h-[200] py-10 bg-[#E9E9F1]">
+        <Heart className="relative left-[390px] bottom-3 text-[#B2B2B2]  " size={28} />
+
         <img
           src="/images/3x module 1.png"
           alt="Product Image"

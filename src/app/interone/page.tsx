@@ -1,11 +1,22 @@
+"use client";
 import Breadcrumbs from "../components/modules/Products/breadcrumb";
 import Filters from "../components/modules/Products/filter";
-import ProductGrid from "../components/modules/Products/product-grid";
+import ProductGrid, {
+  products,
+} from "../components/modules/Products/product-grid";
 import SearchBar from "../components/modules/Products/search-bar";
 import { monsterrat } from "../styles/font";
 import ScrollToTopButton from "../components/widgets/scroll-top";
+import { useState } from "react";
 
 export default function ProductsPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 12;
+  const totalProducts = products.length;
+
+  const startIndex = (currentPage - 1) * productsPerPage + 1;
+  const endIndex = Math.min(currentPage * productsPerPage, totalProducts);
+
   return (
     <div className="relative min-h-screen ">
       <Breadcrumbs />
@@ -17,9 +28,14 @@ export default function ProductsPage() {
           <p
             className={`${monsterrat.className} text-right text-xl text-[#262626] px-4`}
           >
-            Showing 1-12 of 21 results
+            Showing {startIndex}-{endIndex} of {totalProducts} results
           </p>
-          <ProductGrid />
+          <ProductGrid
+            currentPage={currentPage}
+            productsPerPage={productsPerPage}
+            onPageChange={setCurrentPage}
+          />
+
           <ScrollToTopButton />
         </div>
       </div>

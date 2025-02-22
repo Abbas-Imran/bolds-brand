@@ -9,7 +9,7 @@ export default function WidgetBottom() {
         alt="Image in bottom"
         width={450}
         height={400}
-        src=""
+        src="/"
         className="w-full h-auto md:h-[400px] object-cover rounded-xl bg-[#B2B2B2]"
       />
     </div>

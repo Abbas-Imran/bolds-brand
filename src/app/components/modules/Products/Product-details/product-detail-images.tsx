@@ -10,13 +10,13 @@ export default function ProductDetailImages() {
       </div>
       <div className="flex flex-row gap-8 mt-6 md:mt-10">
         <div className="w-24 h-24 md:w-32 md:h-32 bg-[#B2B2B2]">
-          <img src="" alt="" />
+          <img src="/" alt="" />
         </div>
         <div className="w-24 h-24 md:w-32 md:h-32 bg-[#B2B2B2]">
-          <img src="" alt="" />
+          <img src="/" alt="" />
         </div>
         <div className="w-24 h-24 md:w-32 md:h-32 bg-[#B2B2B2]">
-          <img src="" alt="" />
+          <img src="/" alt="" />
         </div>
       </div>
     </div>

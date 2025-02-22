@@ -1,8 +1,14 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
+
   return (
     <div>
       {" "}
@@ -13,35 +19,67 @@ function Navbar() {
         <nav className="mx-2 bg-white rounded-b-3xl rounded-t-md px-8 py-10">
           <ul className="flex items-center justify-center">
             <li className="px-6 border-r">
-              <Link href="/" className="text-[#007BFF] hover:text-[#0056b3]">
+              {/* <Link href="/" className="text-[#007BFF] hover:text-[#0056b3]"> */}
+              <Link
+                href="/"
+                className={`${
+                  isActive("/") ? "text-[#007BFF] " : "text-gray-600"
+                } hover:text-[#0056b3]`}
+              >
                 HOME
               </Link>
             </li>
             <li className="px-6 border-r">
-              <Link href="/about" className="text-gray-600 hover:text-gray-900">
+              {/* <Link href="/about" className="text-gray-600 hover:text-gray-900"> */}
+              <Link
+                href="/about"
+                className={`${
+                  isActive("/about") ? "text-[#007BFF] " : "text-gray-600"
+                } hover:text-gray-900`}
+              >
                 ABOUT US
               </Link>
             </li>
             <li className="px-6 border-r">
-              <Link
+              {/* <Link
                 href="/interone"
                 className="text-gray-600 hover:text-gray-900"
+              > */}
+              <Link
+                href="/interone"
+                className={`${
+                  isActive("/interone") ? "text-[#007BFF] " : "text-gray-600"
+                } hover:text-gray-900`}
               >
                 INTERONE
               </Link>
             </li>
             <li className="px-6 border-r">
-              <Link
+              {/* <Link
                 href="/premium-bond"
                 className="text-gray-600 hover:text-gray-900"
+              > */}
+              <Link
+                href="/premium-bond"
+                className={`${
+                  isActive("/premium-bond")
+                    ? "text-[#007BFF] "
+                    : "text-gray-600"
+                } hover:text-gray-900`}
               >
                 PREMIUM BOND
               </Link>
             </li>
             <li className="px-6">
-              <Link
+              {/* <Link
                 href="/contact"
                 className="text-gray-600 hover:text-gray-900"
+              > */}
+              <Link
+                href="/contact"
+                className={`${
+                  isActive("/contact") ? "text-[#007BFF] " : "text-gray-600"
+                } hover:text-gray-900`}
               >
                 CONTACT
               </Link>

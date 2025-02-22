@@ -7,7 +7,7 @@ export default function Hero() {
       className="w-full h-[831px] bg-gradient-to-b from-[#2d313d] via-[#2d313d] to-black flex flex-col items-center justify-center text-center px-4 rounded-b-[80px] relative -top-5
  left-0 z-[-1]"
     >
-      <div className="w-450 h-354 mb-20">
+      <div className="md:w-450 md:h-354 md:mb-20">
         <Image
           alt="logo with text"
           width={450}
@@ -17,7 +17,7 @@ export default function Hero() {
       </div>
       <div className="mt-8 px-10">
         <p
-          className={`${oswald.className} text-2xl px-46 text-[#FFFFFF] leading-relaxed`}
+          className={`${oswald.className} md:text-2xl text-md px-46 text-[#FFFFFF] leading-relaxed`}
         >
           Welcome to Vision Traders, your trusted partner in delivering
           excellence and innovation. Founded and led by Ayaz Waheed, Vision

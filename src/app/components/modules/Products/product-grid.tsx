@@ -5,87 +5,102 @@ import Pagination from "./pagination";
 
 export const products = [
   {
+    id: 1,
     image: "/images/3x module 1.png",
     title: "3x LED Module",
     type: "led",
   },
   {
+    id: 2,
     image: "/images/3x module 1.png",
     title: "2x LED Module",
     type: "led",
   },
   {
+    id: 3,
     image: "/images/3x module 1.png",
     title: "1x LED Module",
     type: "led",
   },
   {
+    id: 4,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "2x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
   {
+    id: 5,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "3x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
 
   {
+    id: 6,
     image: "/images/3x module 1.png",
     title: "1x LED Module",
     type: "led",
   },
   {
+    id: 7,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "2x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
   {
+    id: 8,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "3x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
   {
+    id: 9,
     image: "/images/3x module 1.png",
     title: "1x LED Module",
     type: "led",
   },
   {
-    image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
-    subtitle: "Composite",
-    type: "composite",
-  },
-  {
-    image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
-    subtitle: "Composite",
-    type: "composite",
-  },
-  {
+    id: 10,
     image: "/images/3x module 1.png",
     title: "1x LED Module",
+    subtitle: "Composite",
+    type: "composite",
+  },
+  {
+    id: 11,
+    image: "/images/3x module 1.png",
+    title: "2x LED Module",
+    subtitle: "Composite",
+    type: "composite",
+  },
+  {
+    id: 12,
+    image: "/images/3x module 1.png",
+    title: "3x LED Module",
     type: "led",
   },
   {
+    id: 13,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "1x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
   {
+    id: 14,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "2x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
   {
+    id: 15,
     image: "/images/3x module 1.png",
-    title: "Fireproof Aluminum",
+    title: "3x LED Module",
     subtitle: "Composite",
     type: "composite",
   },
@@ -118,6 +133,7 @@ export default function ProductGrid({
             title={product.title}
             subtitle={product.subtitle}
             type={product.type}
+            id={product.id}
           />
         ))}
       </div>

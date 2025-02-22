@@ -3,7 +3,7 @@ import ProductCard from "./product-card";
 import { useState } from "react";
 import Pagination from "./pagination";
 
-const products = [
+export const products = [
   {
     image: "/images/3x module 1.png",
     title: "3x LED Module",
@@ -91,15 +91,27 @@ const products = [
   },
 ];
 
-export default function ProductGrid() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const productsPerPage = 12;
-  const totalPages = Math.ceil(products.length / productsPerPage);
+export default function ProductGrid({
+  currentPage,
+  productsPerPage,
+  onPageChange,
+}: {
+  currentPage: number;
+  productsPerPage: number;
+  onPageChange: (page: number) => void;
+}) {
+  const totalProducts = products.length;
+  const totalPages = Math.ceil(totalProducts / productsPerPage);
+
+  // Calculate indexes for pagination
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+  const paginatedProducts = products.slice(startIndex, endIndex);
 
   return (
     <div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
-        {products.map((product, index) => (
+        {paginatedProducts.map((product, index) => (
           <ProductCard
             key={index}
             image={product.image}
@@ -113,7 +125,7 @@ export default function ProductGrid() {
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
-        onPageChange={setCurrentPage}
+        onPageChange={onPageChange}
       />
     </div>
   );

@@ -3,21 +3,19 @@ import { oswald } from "@/app/styles/font";
 
 export default function Hero() {
   return (
-    <div
-      className="w-full h-[831px] bg-gradient-to-b from-[#2d313d] via-[#2d313d] to-black flex flex-col items-center justify-center text-center px-4 rounded-b-[80px] relative -top-5
- left-0 z-[-1]"
-    >
-      <div className="md:w-450 md:h-354 md:mb-20">
+    <div className="w-full h-[700px] sm:h-[831px] bg-gradient-to-b from-[#2d313d] via-[#2d313d] to-black flex flex-col items-center justify-center text-center px-4 sm:px-6 rounded-b-[60px] sm:rounded-b-[80px] relative -top-5 left-0 z-[-1]">
+      <div className="w-52 mt-16 h-48 sm:w-[450px] sm:h-[354px] mb-10 sm:mb-10 sm:mt-10">
         <Image
           alt="logo with text"
           width={450}
           height={354}
           src="/logo_text.jpg"
+          className="w-full h-auto"
         />
       </div>
-      <div className="mt-8 px-10">
+      <div className="mt-6 sm:mt-8 px-4 sm:px-10">
         <p
-          className={`${oswald.className} md:text-2xl text-md px-46 text-[#FFFFFF] leading-relaxed`}
+          className={`${oswald.className} text-[14px] min-w-[270px]:text-10px sm:text-md md:text-2xl text-[#FFFFFF] leading-relaxed sm:leading-normal`}
         >
           Welcome to Vision Traders, your trusted partner in delivering
           excellence and innovation. Founded and led by Ayaz Waheed, Vision

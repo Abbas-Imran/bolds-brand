@@ -4,11 +4,13 @@ export default function ProductDetailDescription() {
   return (
     <div className="px-4 md:px-0">
       <h1
-        className={`${monsterrat.className} text-[#262626] font-bold text-xl md:text-2xl`}
+        className={`${monsterrat.className} text-[#262626] font-semibold md:font-bold text-xl md:text-2xl`}
       >
         DETAIL DESCRIPTION
       </h1>
-      <p className={`${monsterrat.className} text-[#707070] mt-8 md:mt-16 text-sm md:text-base`}>
+      <p
+        className={`${monsterrat.className} text-[#707070] mt-8 md:mt-16 text-sm md:text-base`}
+      >
         Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
         impedit quo minus id quod maxime placeat facere possimus, omnis amet
         voluptas assumenda est, omnis dolor repellendus quis nostrum.

@@ -20,13 +20,16 @@ export default function ProductsPage() {
   return (
     <div className="relative min-h-screen ">
       <Breadcrumbs />
-      <SearchBar />
+      <div className="hidden md:block">
+
+        <SearchBar />
+      </div>
 
       <div className="flex flex-col md:flex-row px-6">
         <Filters />
         <div className="w-full md:w-3/4">
           <p
-            className={`${monsterrat.className} text-right text-xl text-[#262626] px-4`}
+            className={`${monsterrat.className} text-right sm:text-xl text-xs text-[#262626] px-4`}
           >
             Showing {startIndex}-{endIndex} of {totalProducts} results
           </p>

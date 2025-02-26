@@ -5,7 +5,7 @@ export default function ContentRight() {
     <div className="px-4 md:px-0">
       <div>
         <h2
-          className={`${monsterrat.className} text-2xl md:text-3xl font-semibold text-[#262626] mb-16`}
+          className={`${monsterrat.className} text-xl md:text-3xl font-semibold text-[#262626] md:mb-16 mb-4`}
         >
           3X LED MODULE
         </h2>
@@ -16,7 +16,9 @@ export default function ContentRight() {
         >
           OVERVIEW
         </h3>
-        <p className={`${monsterrat.className} text-[#707070] text-sm md:text-base`}>
+        <p
+          className={`${monsterrat.className} text-[#707070] text-sm md:text-base`}
+        >
           Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
           impedit quo minus id quod maxime placeat facere possimus.
         </p>

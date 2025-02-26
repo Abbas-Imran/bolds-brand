@@ -8,7 +8,7 @@ export default function ProductDetailsPage() {
   return (
     <div className="max-w-7xl mx-auto  md:px-40">
       <BreadcrumbsProductDetails />
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-20  items-start">
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-20 items-start">
         <ProductDetailImages />
         <ContentRight />
       </div>

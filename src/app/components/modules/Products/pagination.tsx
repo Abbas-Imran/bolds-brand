@@ -14,14 +14,14 @@ export default function Pagination({
   onPageChange,
 }: PaginationProps) {
   return (
-    <div className="flex justify-end items-center space-x-4 text-gray-600 mt-6 mr-32">
+    <div className="flex justify-end items-center space-x-2 sm:space-x-4 text-gray-600 mt-4 sm:mt-6  mr-16 sm:mr-32 text-sm sm:text-base">
       {/* Previous Button */}
       <button
         className={`${monsterrat.className} ${
           currentPage === 1
             ? "text-gray-400 cursor-not-allowed"
             : "text-[#148BE7]"
-        }`}
+        } `}
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >

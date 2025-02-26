@@ -53,11 +53,11 @@ export default function TopProducts() {
                 />
               </div>
               <div className="absolute bottom-0 w-full">
-                <div className="bg-[#2A2A2A] md:max-w-36 w-20 py-1 rounded-t-xl m-auto">
+                <div className="bg-[#2A2A2A] md:max-w-36 w-20 max-[350px]:hidden py-1 rounded-t-xl m-auto">
                   <img
                     src={"/images/Interon LOGO 3.png"}
                     alt={product.title}
-                    className="sm:h-fit m-auto w-[20px] h-[20px] sm:h-fit sm:w-fit"
+                    className="sm:h-fit m-auto w-[20px] h-[20px]  sm:w-fit"
                   />
                 </div>
                 <div className="bg-[#2A2A2A] p-2 py-4 text-center">

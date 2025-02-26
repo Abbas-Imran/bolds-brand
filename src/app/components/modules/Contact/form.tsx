@@ -2,7 +2,7 @@ import { monsterrat } from "@/app/styles/font";
 
 export default function ContactForm() {
   return (
-    <div className="flex-col items-start mt-14 px-6 md:px-48 md:mr-20">
+    <div className="flex-col items-start mt-14 px-6 md:px-24 lg:px-48 md:mr-20">
       <div>
         <h3 className={`${monsterrat.className} text-gray-500 text-lg mb-1`}>
           CONTACT US

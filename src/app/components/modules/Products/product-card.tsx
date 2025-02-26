@@ -28,30 +28,30 @@ export default function ProductCard({
       className="bg-white rounded-xl relative pb-14 shadow-md hover:shadow-lg transition cursor-pointer"
       onClick={handleClick}
     >
-      <div className="aspect-square bg-gradient-to-b rounded-xl from-[#F0EFF5] to-[#E9E9F1] p-4 flex items-center justify-center">
+      <div className="aspect-square bg-gradient-to-b rounded-xl from-[#F0EFF5] to-[#E9E9F1] p-1 flex items-center justify-center ">
         <Image
           src={image}
           alt={title}
           width={180}
           height={180}
-          className="h-auto w-auto object-contain"
+          className="h-full w-full object-contain "
         />
       </div>
 
       <div className="absolute bottom-0 w-full">
-        <div className="bg-[#2A2A2A] max-w-36 py-1 rounded-t-xl m-auto">
+        <div className="bg-[#2A2A2A] max-w-36 py-1 rounded-t-xl m-auto max-[350px]:hidden ">
           <Image
             src="/images/Interon LOGO 3.png"
             alt="Brand Logo"
             width={50}
             height={50}
-            className="h-fit m-auto"
+            className="sm:h-fit sm:w-fit t m-auto w-[20px] h-[20px]"
           />
         </div>
 
         <div className="bg-[#2A2A2A] p-2 py-4 text-center">
           <h3
-            className={`${monsterrat.className} text-xl font-medium text-white`}
+            className={`${monsterrat.className} sm:text-[15px] text-[12px]  font-medium text-white`}
           >
             {title}
           </h3>

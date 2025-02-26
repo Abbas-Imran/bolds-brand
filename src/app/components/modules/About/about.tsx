@@ -26,7 +26,7 @@ export default function AboutCEO() {
           </p>
           <a
             href="#"
-            className={`${monsterrat.className} text-[#148AE5] font-semibold text-[12px] md:text-[18px]  md:mt-[350px] mt-[30px] inline-block text-lg underline    `}
+            className={`${monsterrat.className} text-[#148AE5] font-semibold text-[10px] md:text-[18px]  md:mt-[350px] mt-[30px] inline-block text-lg underline    `}
           >
             LEARN MORE
           </a>
